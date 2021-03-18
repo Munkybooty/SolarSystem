@@ -1,0 +1,79 @@
+Gravitational Constant G = 6.67408e-11 m3 kg-1 s-2
+DISTANCES:
+    Sun: 
+        Perihelion:               0 m
+        Aphelion:                 0 m
+    Mercury: 
+        Perihelion:     46001200000 m
+        Aphelion:       69816900000 m
+    Venus:
+        Perihelion:    107477000000 m
+        Aphelion:      108939000000 m
+    Earth: 
+        Perihelion:    147095000000 m
+        Aphelion:      152100000000 m       
+    Mars:
+        Perihelion:    206700000000 m
+        Aphelion:      249200000000 m
+    Jupiter: 
+        Perihelion:        740.52e9 m
+        Aphelion:          816.62e9 m
+    Saturn:
+        Perihelion:      1352.55e9 m
+        Aphelion:        1514.50e9 m
+    Uranus: 
+        Perihelion:          2742e9 m
+        Aphelion:            3008e9 m 
+    Neptune:
+        Perihelion:         4.46e12 m
+        Aphelion:           4.54e12 m
+    Pluto:
+        Perihelion:      4.43682e12 m
+        Aphelion:        7.37593e12 m
+
+MASSES:
+    Sun:        1.9884e30 kg
+    Mercury:    3.3011e23 kg
+    Venus:      4.8675e24 kg
+    Earth:      5.9724e24 kg
+    Mars:       6.4171e23 kg
+    Jupiter:    1.8982e27 kg
+    Saturn:     5.6834e26 kg
+    Uranus:     8.6815e25 kg 
+    Neptune:    1.0241e26 kg
+    Pluto:      1.3019e22 kg
+
+VELOCITIES:
+    Sun:        00000  m/s
+    Mercury:    47362  m/s
+    Venus:      35020  m/s
+    Earth:      29780  m/s
+    Mars:       24007  m/s
+    Jupiter:    13070  m/s
+    Saturn:     9680   m/s
+    Uranus:     6800   m/s
+    Neptune:    5430   m/s
+    Pluto:      4743   m/s
+
+RADII:
+    Sun:        696.34e6 m
+    Mercury:    2.4397e6 m
+    Venus:      6.0528e6 m
+    Earth:      6.3710e6 m
+    Mars:       3.3893e6 m
+    Jupiter:    69.911e6 m 
+    Saturn:     58.232e6 m
+    Uranus:     25.362e6 m
+    Neptune:    24.622e6 m
+    Pluto:      1.1883e6 m
+
+ASTEROID BELT:
+    Inner Ring:            3.291e11   m
+    Center Axis:           4.039e11   m
+    Outter Ring:           4.787e11   m
+    Length:                2.537e12   m
+    Diameter:              74.8e9     m
+    Cross-Sectional Area   15.77e21   m
+    Estimated Volume:      44.646e33  m^3
+    Estimated Mass:        2.39e21    kg
+    Estimated Density:     53.53e-15  kg/m^3  
