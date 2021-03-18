@@ -4,7 +4,7 @@
  * of the Solar System, aswell as the graphics side of the simulation.
  * @author Hussain Raza <hraza8@gatech.edu>
  * @author Isaac Naupa <iaguirre6@gatech.edu>
- * @version 1.1
+ * @version 1.3
  */
 /**
  * Function for setting up our canvas for animation

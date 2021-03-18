@@ -1,4 +1,12 @@
-let scene,camera,renderer,controls,gui;
+/**
+ * @fileoverview Holds a number of methods that operate on objects of the type Planet.
+ * This will be the main driver for our Solar System Sim. Driver.js is responssibe for the initialization,
+ * of the Solar System, aswell as the graphics side of the simulation.
+ * @author Hussain Raza <hraza8@gatech.edu>
+ * @author Isaac Naupa <iaguirre6@gatech.edu>
+ * @version 1.3
+ */
+let scene,camera,renderer,controls;
 
 let planetArray = [sun, mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto];
 let geometry = [];
@@ -8,7 +16,7 @@ let newPosX = [];
 let newPosZ = [];
 
 function init() {
-
+    createGUI();
 
     scene = new THREE.Scene();
 

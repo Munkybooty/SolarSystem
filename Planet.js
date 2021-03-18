@@ -3,7 +3,7 @@
  * orbital velocity, and radius. Planet.js has a number of methods that can be called on Planet objects
  * @author Hussain Raza <hraza8@gatech.edu>
  * @author Isaac Naupa <iaguirre6@gatech.edu>
- * @version 1.2
+ * @version 1.3
  */
 //Constants
 let G = 6.67408e-11 //m^3 kg-1 s-2
@@ -27,7 +27,6 @@ class Planet {
         this.texture = texture;
         this.ax = 0;
         this.ay = 0;
-        this.name = 'planet';
     }
     posNegX(ox) {
         let distBTWNX = this.x - ox;
