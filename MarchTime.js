@@ -1,4 +1,72 @@
+/**
+ * @fileoverview Calculates the values of our positions and velocities by using our 
+ * accelerations in both the X and Y direction
+ * @author Hussain Raza <hraza8@gatech.edu>
+ * @author Isaac Naupa <iaguirre6@gatech.edu>
+ * @version 1.3
+ */
+// Time Step
 let dt = 10000;
+let options,gui;
+
+const m1 = sun.mass;
+const m2 = mercury.mass;
+const m3 = venus.mass;
+const m4 = earth.mass;
+const m5 = mars.mass;
+const m6 = jupiter.mass;
+const m7 = saturn.mass;
+const m8 = uranus.mass;
+const m9 = neptune.mass;
+const m10 = pluto.mass;
+
+function createGUI() {
+    options = {
+    Masses: {
+        SunMass: sun.mass,
+        MercuryMass: mercury.mass,
+        VenusMass:venus.mass,
+        EarthMass:earth.mass,
+        MarsMass: mars.mass,
+        JupiterMass: jupiter.mass,
+        SaturnMass: saturn.mass,
+        UranusMass: uranus.mass,
+        NeptuneMass:neptune.mass,
+        PlutoMass:pluto.mass,
+    },
+    reset: function () {
+        this.SunMass = m1;
+        this.MercuryMass = m2;
+        this.VenusMass = m3;
+        this.EarthMass = m4;
+        this.MarsMass =  m5;
+        this.JupiterMass = m6;
+        this.SaturnMass = m7;
+        this.UranusMass = m8;
+        this.NeptuneMass = m9;
+        this.PlutoMass = m10;
+    },
+
+};
+
+    gui = new dat.GUI();
+
+    Masses = gui.addFolder('Masses');
+    Masses.add(options.Masses, 'SunMass', 1, 1e31).listen();
+    Masses.add(options.Masses, 'MercuryMass', 1, 1e31).listen();
+    Masses.add(options.Masses, 'VenusMass', 1, 1e31).listen();
+    Masses.add(options.Masses, 'EarthMass', 1, 1e31).listen();
+    Masses.add(options.Masses, 'MarsMass', 1, 1e31).listen();
+    Masses.add(options.Masses, 'JupiterMass', 1, 1e31).listen();
+    Masses.add(options.Masses, 'SaturnMass', 1, 1e31).listen();
+    Masses.add(options.Masses, 'UranusMass', 1, 1e31).listen();
+    Masses.add(options.Masses, 'NeptuneMass', 1, 1e31).listen();
+    Masses.add(options.Masses, 'PlutoMass', 1, 1e31).listen();
+
+    gui.add(options,'reset');
+
+
+}
 
 function accX(planet) {
     switch(planet){
@@ -30,6 +98,17 @@ function accY(planet) {
 }
 
 function run() {
+    sun.mass = options.Masses.SunMass;
+    mercury.mass = options.Masses.MercuryMass;
+    venus.mass = options.Masses.VenusMass;
+    earth.mass = options.Masses.EarthMass;
+    mars.mass = options.Masses.MarsMass;
+    jupiter.mass = options.Masses.JupiterMass;
+    saturn.mass = options.Masses.SaturnMass;
+    uranus.mass = options.Masses.UranusMass;
+    neptune.mass = options.Masses.NeptuneMass;
+    pluto.mass = options.Masses.PlutoMass;
+
     sun.ax = accX(sun);
     sun.ay = accY(sun);
     mercury.ax = accX(mercury);
